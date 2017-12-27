@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table portfolio" style="width = 50%" align="center" border="1" >
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+        <tr>
+            {% for i in range: %}
+                <tr>
+                    <td>{{ data[i]["Symbol"]}}</td>
+                    <td>{{ data[i]["Name"]}}</td>
+                    <td>{{ data[i]["Shares"]}}</td>
+                    <td>{{ data[i]["Price"]}}</td>
+                    <td>{{ data[i]["TOTAL"]}}</td>
+                </tr>
+
+            {% endfor %}
+        </tr>
+    </table>
+{% endblock %}

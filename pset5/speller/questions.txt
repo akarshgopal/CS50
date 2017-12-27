@@ -1,0 +1,7 @@
+0.  an invented long word said to mean a lung disease caused by inhaling very fine ash and sand dust
+1.  returns resource usage measures for who, which can be RUSAGE_SELF , RUSAGE_CHILDREN or RUSAGE_THREAD
+2.  16
+3.  The parameters require pointers, which means addresses of before and after.
+4.  It spell checks each word in the text, allows only alphabet and apostrophe characters,ignores strings too long to be words and strings with numbers. Checking if a whole word has been found;if mispelled,the word is printed, and the buffer is prepared for the next iteration.
+5.  In order to get each character of the word individually, and not get words as a whole.
+6.  In order to avoid modification of the parameters, since pointers are passed by reference.

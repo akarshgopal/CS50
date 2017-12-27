@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table portfolio" style="width = 50%" align="center" border="1" >
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            {% for i in range: %}
+                <tr>
+                    <td>{{ data[i]["Symbol"]}}</td>
+                    <td>{{ data[i]["Shares"]}}</td>
+                    <td>{{ data[i]["Price"]}}</td>
+                    <td>{{ data[i]["TIME"]}}</td>
+                </tr>
+
+            {% endfor %}
+        </tr>
+    </table>
+{% endblock %}

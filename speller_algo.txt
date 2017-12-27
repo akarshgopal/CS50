@@ -1,0 +1,28 @@
+Load
+1.Start
+2.Load Dictionary File
+3.Read every character in file
+    3.1 If new line
+        3.1.1 If current!=NULL, set exists = true
+        3.1.2 Set current to dictionary
+        3.1.3 Counter++
+    3.2 Traverse dictionary and check if character exists
+        3.2.1 If character exists continue 3
+        3.2.2 If character doesn't exist add character to appropriate curr->next, continue
+4.End
+
+Check
+1.Start
+2.Set curr to dictionary
+3.iterate over characters in word
+    3.1 If character exists in curr->next
+        3.1.1 set curr to appropriate indexed dictionary->next
+        3.1.2 Continue
+    3.2 Else if character->exists is true
+        3.2.1 Return true
+    3.3 Else return false
+
+4.End
+
+
+

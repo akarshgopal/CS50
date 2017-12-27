@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transact
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('transact') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="amount" placeholder="Add(+x) or withdraw(-x)" type="text"/> <!-- Input form for symbol -->
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit" >Transact</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}

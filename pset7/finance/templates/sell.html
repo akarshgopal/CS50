@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('sell') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <select class="form-group" name="symbol" type="text">
+                         <!-- Input form for symbol -->
+                        <option disabled selected value>Symbol</option>
+                        {% for i in range %}
+                              <option value = {{symbols[i]["Symbol"]}} >{{symbols[i]["Symbol"]}}</option>
+                        {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Shares" type="text"/>     <!--Taking shares as text, might want to change -->
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Sell</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}

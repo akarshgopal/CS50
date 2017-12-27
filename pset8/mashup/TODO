@@ -1,0 +1,27 @@
+TODO
+
+I application.py
+    1.articles
+        -get geo                                                -done
+        -sanity checks for request.arg.get()                    -done
+        -ouput JSON array of objects                            -done
+    2.search
+        -get q                                                  -done
+        -sanity check                                           -done
+        -query places with q
+            -PINCODE                                            -done
+            -Place Name                                         -done
+            -AND /OR
+
+II scripts.js
+    3.configure
+        -suggest searches                                       -done
+    4.addMarker                                                 -done
+        add markers
+    5.removeMarkers
+        removed                                                 -done
+
+!Issues!:
+
+1.My recent searches show up as suggestions                     -ignore
+2.Markers not added                                             -done
